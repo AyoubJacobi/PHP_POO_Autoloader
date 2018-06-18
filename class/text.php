@@ -1,0 +1,1 @@
+<?phpclass Text {    /**    public static function PublicWhithZero($chiffre){        return self::whithZero($chiffre);    }     */    private static $suffix = " £";    public static function whithZero($chiffre){       if ($chiffre < 10 ){           return '0' . $chiffre . self::$suffix;       }else return $chiffre . self::$suffix;    }}
